@@ -1,0 +1,2 @@
+# 基于angluar-requirejs单页面应用架构
+基于angluar-requirejs单页面应用架构项目实战
