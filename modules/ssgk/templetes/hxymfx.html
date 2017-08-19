@@ -1,0 +1,949 @@
+
+
+<header class="yy-header w" data-ng-controller="mainmenuCtrl">
+    <span class="logo fl"></span>
+    <main-menu data-data="mainmenu"></main-menu>
+</header>
+<section class="yy-wrap w clearfix">
+    <div class="yy-left fl" data-ng-controller="menuCtrl">
+        <kz-sidebar-menu data-ng-show="$parent.openStatus > 0" data-data="menu" data-args="{page:1}"></kz-sidebar-menu>
+    </div>
+    <div class="yy-right fl">
+        <div class="page-content topic-01">
+            <div>{{mes}}</div>
+            <!-- header-mian -->
+            <!--include virtual="../_header-main.html" -->
+            <div class="header-main">
+                <div class="title">
+                    实时流量地图
+                </div>
+                <div class="chose-data-wrapper">
+                    <div class="time">
+                        2015/11/20(星期三) 17:15:56
+                    </div>
+                    <div class="device">
+                        <ul>
+                            <li class="active">全部</li>
+                            <li>PC</li>
+                            <li>WAP</li>
+                            <li>APP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end of header-main -->
+            <div class="core-page-wrapper search-wrapper">
+                <div class="header">
+                    <div class="title">核心页面分析</div>
+                </div>
+                <div class="search-header">
+                    <ul class="clearfix">
+                        <li class="tab-item on">一级页面</li>
+                        <li class="tab-item">品类</li>
+                    </ul>
+                </div>
+                <div class="search-content content">
+                    <ul>
+                        <!-- 一级页面 -->
+                        <li class="active search-content-li">
+                            <!-- tab 切 -->
+                            <div class="cd-content">
+                                <a href="javascrpt:void(0)" class="prev cd-btn"></a>
+                                <div class="category01">
+                                    <ul>
+                                        <li>
+                                            <p>首页</p>
+                                            <p>访客数</p>
+                                            <p>占比<span>8.61%</span></p>
+                                        </li>
+                                        <li class="cur-item">
+                                            <p>商品详情页</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>商品详情页</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li class="disable">
+                                            <p>商品详情页</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li class="disable">
+                                            <p>商品详情页</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>商品详情页</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>商品详情页</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>商品详情页</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>商品详情页</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>商品详情页</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="javascrpt:void(0)" class="next cd-btn"></a>
+                            </div>
+                            <!-- 来源去向图 -->
+                            <div class="prod-flow-title">
+                                来源去向图
+                            </div>
+                            <div class="prod-flow-wrapper prod-flow-wrapper-middle clearfix">
+                                <div class="content-list from">
+                                    <div class="content-header">
+                                        <ul>
+                                            <li>
+                                                <div class="from">来源</div>
+                                                <div class="visitNum">访客数</div>
+                                                <div class="percentage">占比</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-body">
+                                        <ul>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        首页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    4,853
+                                                </div>
+                                                <div class="percentage">
+                                                    25.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        首页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    4,853
+                                                </div>
+                                                <div class="percentage">
+                                                    25.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-info prod-info-simp">
+                                    <div class="arrow"></div>
+                                    <div class="prod-detail">
+                                        <div class="prod-pic">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="prod-desc">
+                                            缤特力 EXPLORER 500 商务蓝牙耳机
+                                        </div>
+                                        <div class="prod-code">
+                                            1006887703
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-detail-simp">
+                                        <p>冰洗</p>
+                                        <span>访客数</span><i>18,173</i>
+                                    </div>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="content-list to">
+                                    <div class="content-header">
+                                        <ul>
+                                            <li>
+                                                <div class="from">去向</div>
+                                                <div class="visitNum">访客数</div>
+                                                <div class="percentage">占比</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-body">
+                                        <ul>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        首页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    4,853
+                                                </div>
+                                                <div class="percentage">
+                                                    25.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        首页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    4,853
+                                                </div>
+                                                <div class="percentage">
+                                                    25.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--include virtual="../_prod-flow.html" -->
+                            <!-- end of 来源去向图 -->
+
+                            <!--商品详情页 - 受访页面-->
+                            <div class="prod-details-visited">
+                                <div class="pdv-header">商品详情页 - 受访页面</div>
+                                <div class="pdv-content">
+                                    <ul>
+                                        <li>
+                                            <p>受访页面</p>
+                                            <p>访客数</p>
+                                            <p>SPV_UV</p>
+                                            <p>一跳率</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="">http://www.suning.com</a></p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="">http://www.suning.com http://dianqi.suning.com/</a></p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li><li>
+                                        <p><a href="http://www.suning.com">http://www.suning.com</a> </p>
+                                        <p>2,853</p>
+                                        <p>218,755</p>
+                                        <p>10.08%</p>
+                                    </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com</a> </p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com</a> </p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com</a> </p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com</a> </p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com</a> </p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com</a> </p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com</a> </p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p>其他页面</p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 品类 -->
+                        <li class="search-content-li">
+                            <!-- tab 切 -->
+                            <div class="cd-content">
+                                <a href="javascrpt:void(0)" class="prev cd-btn"></a>
+                                <div class="category01">
+                                    <ul>
+                                        <li>
+                                            <p>空调</p>
+                                            <p>访客数</p>
+                                            <p>占比<span>8.61%</span></p>
+                                        </li>
+                                        <li class="cur-item">
+                                            <p>冰洗</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>黑电</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li class="disable">
+                                            <p>数码</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li class="disable">
+                                            <p>电脑</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>通信</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>小家电</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>百货</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>百货</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                        <li>
+                                            <p>小家电</p>
+                                            <p>访客数<span>18,173</span></p>
+                                            <p>占比<span>1.40%</span></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="javascrpt:void(0)" class="next cd-btn"></a>
+                            </div>
+                            <!-- 来源去向图 -->
+                            <div class="prod-flow-title">
+                                来源去向图
+                            </div>
+                            <div class="prod-flow-wrapper prod-flow-wrapper-middle clearfix">
+                                <div class="content-list from">
+                                    <div class="content-header">
+                                        <ul>
+                                            <li>
+                                                <div class="from">来源</div>
+                                                <div class="visitNum">访客数</div>
+                                                <div class="percentage">占比</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-body">
+                                        <ul>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        首页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    4,853
+                                                </div>
+                                                <div class="percentage">
+                                                    25.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        首页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    4,853
+                                                </div>
+                                                <div class="percentage">
+                                                    25.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="prod-info prod-info-simp">
+                                    <div class="arrow"></div>
+                                    <div class="prod-detail">
+                                        <div class="prod-pic">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="prod-desc">
+                                            缤特力 EXPLORER 500 商务蓝牙耳机
+                                        </div>
+                                        <div class="prod-code">
+                                            1006887703
+                                        </div>
+                                    </div>
+
+                                    <div class="prod-detail-simp">
+                                        <p>冰洗</p>
+                                        <span>访客数</span><i>18,173</i>
+                                    </div>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="content-list to">
+                                    <div class="content-header">
+                                        <ul>
+                                            <li>
+                                                <div class="from">去向</div>
+                                                <div class="visitNum">访客数</div>
+                                                <div class="percentage">占比</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-body">
+                                        <ul>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        首页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    4,853
+                                                </div>
+                                                <div class="percentage">
+                                                    25.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        首页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    4,853
+                                                </div>
+                                                <div class="percentage">
+                                                    25.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from">
+                                                    <a href="javascript:sn.showCoreList();">
+                                                        频道页
+                                                    </a>
+                                                </div>
+                                                <div class="visitNum">
+                                                    52,853
+                                                </div>
+                                                <div class="percentage">
+                                                    45.12%
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--include virtual="../_prod-flow.html" -->
+                            <!-- end of 来源去向图 -->
+
+                            <!--商品详情页 - 受访页面-->
+                            <div class="prod-details-visited">
+                                <div class="pdv-header">商品详情页 - 受访页面</div>
+                                <div class="pdv-content">
+                                    <ul>
+                                        <li>
+                                            <p>受访页面</p>
+                                            <p>访客数</p>
+                                            <p>SPV_UV</p>
+                                            <p>一跳率</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com </a></p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com </a></p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com </a></p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com </a></p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com </a></p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com </a></p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p><a href="http://www.suning.com">http://www.suning.com </a></p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                        <li>
+                                            <p>其他页面</p>
+                                            <p>2,853</p>
+                                            <p>218,755</p>
+                                            <p>10.08%</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<yy-footer></yy-footer>
+<!-- list 弹窗 -->
+<div class="modal-wrapper modal-690 core-pop-list-wrapper">
+    <div class="header">
+        <div class="title">
+            LIST 页面
+        </div>
+        <div class="close">
+
+        </div>
+    </div>
+    <div class="content core-pop-list">
+        <div class="device">
+            <ul>
+                <li class="active">全部</li>
+                <li>PC</li>
+                <li>WAP</li>
+                <li>APP</li>
+            </ul>
+        </div>
+        <div class="content-header">
+            <ul>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">去向URL</div>
+                    <div class="visitNum">访客数</div>
+                    <div class="percent">占比</div>
+                </li>
+            </ul>
+        </div>
+        <div class="content-body">
+            <ul>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+

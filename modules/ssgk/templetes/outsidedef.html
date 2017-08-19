@@ -1,0 +1,429 @@
+
+<header class="yy-header w" data-ng-controller="mainmenuCtrl">
+	<span class="logo fl"></span>
+	<main-menu data-data="mainmenu"></main-menu>
+</header>
+	<section class="yy-wrap w clearfix">
+		<div>{{mes}}</div>
+		<div class="def-title">
+			<div class="path fl">
+				<a href="#!/sszwly">实时榜单</a><em>&gt;</em><span>商品详情</span>
+			</div>
+			<div class="channel fr">
+				<ul class="ch-list clearfix">
+					<li class="cur">
+						<a href="javascript:void(0)">全部</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">PC</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">WAP</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">APP</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="lyfx rblock">
+			<div class="second-title clearfix">
+				<h2>来源分布</h2>
+				<div class="setting">
+					<span class="setbtn"><b>访客数</b><i></i></span>
+					<div class="drop-down">
+						<div class="source-select">
+							<a class="on" href="#">全部页面</a>
+							<a href="#">首页</a>
+							<a href="#">商品详情页</a>
+							<a href="#">促销页</a>
+							<a href="#">功能页</a>
+							<a href="#">频道页</a>
+							<a href="#">search</a>
+							<a href="#">list</a>
+							<a href="#">营销产品</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div id="trendchart1"></div>
+		</div>
+		<div class=" rblock clearfix">
+			<div class="second-title clearfix">
+				<h2>TOP来源</h2>
+				<div class="setting">
+					<span class="setbtn"><b>设置指标</b><i></i></span>
+					<div class="drop-down" id="diycheck1">
+						<dl>
+							<dt>最多选着3项</dt>
+							<dd>
+								<em>流量指标：</em>
+									<span class="cur">
+										<i></i>
+										访客数
+									</span>
+									<span>
+										<i></i>
+										新访客数
+									</span>
+									<span>
+										<i></i>
+										VISIT
+									</span>
+									<span>
+										<i></i>
+										SPV_UV
+									</span>
+							</dd>
+							<dd>
+								<em>支付指标：</em>
+									<span class="cur">
+										<i></i>
+										有效订单数量
+									</span>
+									<span>
+										<i></i>
+										有效订单金额
+									</span>
+									<span>
+										<i></i>
+										买家数
+									</span>
+							</dd>
+							<dd>
+								<em>转化指标：</em>
+									<span class="cur">
+										<i></i>
+										有效订单转化率
+									</span>
+									<span>
+										<i></i>
+										UV购买转化率
+									</span>
+							</dd>
+						</dl>
+						<div class="btn-err">
+							<a href="#" class="q-btn">确定</a>
+							<p class="err">
+								<b class="arrow-left"><i class="left-arrow1"></i><i class="left-arrow2"></i></b>
+								报错报错报错报错报错报错报错报错报错报错报错报错
+							</p>
+						</div>
+					</div>
+				</div>
+				<p class="source-url">一级来源：导航</p>
+			</div>
+			<div class="thr-table">
+				<dl>
+					<dt>
+						<span class="w50 acenter">排行</span>
+						<span class="w100 acenter">二级来源</span>
+						<span class="w100 acenter">媒体名称</span>
+						<span class="w200 aleft">来源名称</span>
+						<span class="w240 acenter">访客数</span>
+						<span class="w240 acenter">有效订单数</span>
+						<span class="w200 acenter">有效订单数转化率</span>
+					</dt>
+					<dd>
+						<ul>
+							<li class="w50 acenter">1</li>
+							<li class="w100 acenter">付费导航</li>
+							<li class="w100 acenter">114导航</li>
+							<li class="w200 aleft">www.hao123.com</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w200 aright">
+								<span class="sp01">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="w50 acenter">2</li>
+							<li class="w100 acenter">付费导航</li>
+							<li class="w100 acenter">114导航</li>
+							<li class="w200 aleft">www.hao123.com</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w200 aright">
+								<span class="sp01">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="w50 acenter">3</li>
+							<li class="w100 acenter">付费导航</li>
+							<li class="w100 acenter">114导航</li>
+							<li class="w200 aleft">www.hao123.com</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w200 aright">
+								<span class="sp01">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="w50 acenter">4</li>
+							<li class="w100 acenter">付费导航</li>
+							<li class="w100 acenter">114导航</li>
+							<li class="w200 aleft">www.hao123.com</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w200 aright">
+								<span class="sp01">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="w50 acenter">5</li>
+							<li class="w100 acenter">付费导航</li>
+							<li class="w100 acenter">114导航</li>
+							<li class="w200 aleft">www.hao123.com</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w200 aright">
+								<span class="sp01">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="w50 acenter">6</li>
+							<li class="w100 acenter">付费导航</li>
+							<li class="w100 acenter">114导航</li>
+							<li class="w200 aleft">www.hao123.com</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w200 aright">
+								<span class="sp01">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="w50 acenter">7</li>
+							<li class="w100 acenter">付费导航</li>
+							<li class="w100 acenter">114导航</li>
+							<li class="w200 aleft">www.hao123.com</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w200 aright">
+								<span class="sp01">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="w50 acenter">8</li>
+							<li class="w100 acenter">付费导航</li>
+							<li class="w100 acenter">114导航</li>
+							<li class="w200 aleft">www.hao123.com</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w200 aright">
+								<span class="sp01">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="w50 acenter">9</li>
+							<li class="w100 acenter">付费导航</li>
+							<li class="w100 acenter">114导航</li>
+							<li class="w200 aleft">www.hao123.com</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w200 aright">
+								<span class="sp01">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+							</li>
+						</ul>
+						<ul>
+							<li class="w50 acenter">10</li>
+							<li class="w100 acenter">付费导航</li>
+							<li class="w100 acenter">114导航</li>
+							<li class="w200 aleft">www.hao123.com</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w240 aright">
+								<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+							</li>
+							<li class="w200 aright">
+								<span class="sp01">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<div class="sn-page fr">
+          <span style="display:none" href="#" class="sn-page-prev">
+               <i class="sn-arrow-right"> &lt; </i>
+               <span>上一页</span>
+          </span>
+				<a href="#" class="sn-page-prev">
+					<i class="sn-arrow-right"> &lt; </i>
+					<span>上一页</span>
+				</a>
+				<a href="#" class="sn-page-item">1</a>
+				<a href="#" class="sn-page-item sn-page-current">
+					2
+				</a>
+				<a href="#" class="sn-page-item">
+					3
+				</a>
+				<a href="#" class="sn-page-item">
+					4
+				</a>
+				<a href="#" class="sn-page-item">
+					5
+				</a>
+				<span class="sn-page-ellipsis">...</span>
+				<a href="#" class="sn-page-item">50</a>
+				<a href="#" class="sn-page-next">
+					<span>下一页</span>
+					<i class="sn-arrow-left"> &gt; </i>
+				</a>
+          <span style="display:none" class="sn-page-next">
+              <span>下一页</span>
+              <i class="sn-arrow-left"> &gt; </i>
+          </span>
+			</div>
+		</div>
+
+	</section>
+
+<yy-footer></yy-footer>

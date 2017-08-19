@@ -1,0 +1,1767 @@
+<header class="yy-header w" data-ng-controller="mainmenuCtrl">
+	<span class="logo fl"></span>
+	<main-menu data-data="mainmenu"></main-menu>
+</header>
+	<section class="yy-wrap w clearfix">
+		<div class="yy-left fl" data-ng-controller="menuCtrl">
+			<kz-sidebar-menu data-ng-show="$parent.openStatus > 0" data-data="menu" data-args="{page:1}"></kz-sidebar-menu>
+		</div>
+		<div class="yy-right fl">
+
+			<div class="first-title">
+				<div>{{mes}}</div>
+				<h2>实时站外来源</h2>
+				<div class="tab-date">
+					<div class="date-select">
+						<span class="fl">2015-11-18(昨天)</span>
+						<strong class="fl">VS</strong>
+						<div class="dateA date fl">
+							<input type="text" onclick="WdatePicker({maxDate:&apos;%y-%M-{%d-1}&apos;,isShowClear:false,readOnly:true,qsEnabled:false, isShowToday: false,isShowOK: false,onpicking:common.dppicking,onpicked:function(){}});" value="2016-03-02" class="date-selector Wdate">
+						</div>
+					</div>
+					<div class="channel fr" id="channel">
+						<ul class="ch-list clearfix">
+							<li class="cur">
+								<a href="javascript:void(0)">全部</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">PC</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">WAP</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">APP</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="lyfb rblock">
+				<div class="second-title clearfix">
+					<h2>来源分布</h2>
+					<div class="setting">
+						<span class="setbtn"><b>设置指标</b><i></i></span>
+						<div class="drop-down" id="diycheck">
+							<dl>
+								<dt>最多选着3项</dt>
+								<dd>
+									<em>流量指标：</em>
+									<span class="cur">
+										<i></i>
+										访客数
+									</span>
+									<span>
+										<i></i>
+										新访客数
+									</span>
+									<span>
+										<i></i>
+										VISIT
+									</span>
+									<span>
+										<i></i>
+										SPV_UV
+									</span>
+								</dd>
+								<dd>
+									<em>支付指标：</em>
+									<span class="cur">
+										<i></i>
+										有效订单数
+									</span>
+									<span>
+										<i></i>
+										有效订单金额
+									</span>
+									<span>
+										<i></i>
+										买家数
+									</span>
+								</dd>
+								<dd>
+									<em>转化指标：</em>
+									<span class="cur">
+										<i></i>
+										有效订单转化率
+									</span>
+									<span>
+										<i></i>
+										UV购买转化率
+									</span>
+								</dd>
+							</dl>
+							<div class="btn-err">
+								<a href="#" class="q-btn">确定</a>
+								<p class="err">
+									<b class="arrow-left"><i class="left-arrow1"></i><i class="left-arrow2"></i></b>
+									报错报错报错报错报错报错报错报错报错报错报错报错
+								</p>
+							</div>
+						</div>
+					</div>
+					<a href="javascript:;" class="export"><em></em>导出</a>
+				</div>
+				<div class="sec-table" id="sec-table">
+					<div class="th">
+						<span class="th-first">
+							来源
+						</span>
+						<span class="sort cur">
+							<em>访客数</em>
+							<i></i>
+						</span>
+						<span class="sort">
+							<em>有效订单数</em>
+							<i></i>
+						</span>
+						<span class="sort">
+							<em>有效订单转化率</em>
+							<i></i>
+						</span>
+						<span class="th-last">
+							操作
+						</span>
+					</div>
+					<div class="tbody">
+						<dl class="open">
+							<dt>
+								<ol>
+									<li class="tt-first">
+										硬广
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="core.html#!/outsidedef?aa=1">详情</a>
+									</li>
+								</ol>
+							</dt>
+							<dd>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="core.html#!/outsidedef?aa=2">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+							<ol>
+								<li class="tt-first">
+									搜索
+								</li>
+								<li>
+									<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li class="td-last">
+									<a href="#">详情</a>
+								</li>
+							</ol>
+							</dt>
+							<dd>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+							<ol>
+								<li class="tt-first">
+									导航
+								</li>
+								<li>
+									<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li class="td-last">
+									<a href="#">详情</a>
+								</li>
+							</ol>
+							</dt>
+							<dd>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+							<ol>
+								<li class="tt-first">
+									直接流量
+								</li>
+								<li>
+									<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li class="td-last">
+									<a href="#">详情</a>
+								</li>
+							</ol>
+							</dt>
+							<dd>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+							<ol>
+								<li class="tt-first">
+									广告联盟
+								</li>
+								<li>
+									<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li class="td-last">
+									<a href="#">详情</a>
+								</li>
+							</ol>
+							</dt>
+							<dd>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+							<ol>
+								<li class="tt-first">
+									其他
+								</li>
+								<li>
+									<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li class="td-last">
+									<a href="#">详情</a>
+								</li>
+							</ol>
+							</dt>
+							<dd>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+							<ol>
+								<li class="tt-first">
+									EDM
+								</li>
+								<li>
+									<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li>
+									<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+								</li>
+								<li class="td-last">
+									<a href="#">详情</a>
+								</li>
+							</ol>
+							</dt>
+							<dd>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+								<ul>
+									<li class="td-first">
+										运营商
+									</li>
+									<li>
+										<span class="sp01">1,393,101</span>
+										<span class="sp02">
+											<em class="up">3,81%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li>
+										<span class="sp01">99,999,999,999</span>
+										<span class="sp02">
+											<em class="down">999,99%</em>
+										</span>
+									</li>
+									<li class="td-last">
+										<a href="#">详情</a>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="lyfx rblock">
+				<div class="second-title clearfix">
+					<h2>来源分析</h2>
+					<div class="setting">
+						<span class="setbtn"><b>全部页面</b><i></i></span>
+						<div class="drop-down">
+							<div class="source-select">
+								<a class="on" href="javascript:void(0)">全部页面</a>
+								<a href="javascript:void(0)">首页</a>
+								<a href="javascript:void(0)">商品详情页</a>
+								<a href="javascript:void(0)">促销页</a>
+								<a href="javascript:void(0)">功能页</a>
+								<a href="javascript:void(0)">频道页</a>
+								<a href="javascript:void(0)">search</a>
+								<a href="javascript:void(0)">list</a>
+								<a href="javascript:void(0)">营销产品</a>
+							</div>
+
+						</div>
+					</div>
+					<a href="javascript:;" class="export"><em></em>导出</a>
+				</div>
+				<div class="data-show">
+					<div class="chart-area">
+						<div class="data-pop">
+							<strong>直接流量</strong>
+							<p>1,251,195个访客</p>
+							<p>占比5.69%</p>
+							<b></b>
+						</div>
+						<div id="chart1">
+
+						</div>
+					</div>
+					<div class="table-area">
+						<b class="arrow-left-tb"><i class="left-arrow1"></i><i class="left-arrow2"></i></b>
+						<div class="fir-table">
+							<dl>
+								<dt>
+									<span class="w50 aleft">排行</span>
+									<span class="w190 aleft">来源名称</span>
+									<span class="w190 acenter">访客数</span>
+									<span class="w145 acenter">跳出率</span>
+									<span class="w60 aright">操作</span>
+								</dt>
+								<dd>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<div class="sn-page">
+          <span style="display:none" href="#" class="sn-page-prev">
+               <i class="sn-arrow-right"> &lt; </i>
+               <span>上一页</span>
+          </span>
+								<a href="#" class="sn-page-prev">
+									<i class="sn-arrow-right"> &lt; </i>
+									<span>上一页</span>
+								</a>
+								<a href="#" class="sn-page-item">1</a>
+								<a href="#" class="sn-page-item sn-page-current">
+									2
+								</a>
+								<a href="#" class="sn-page-item">
+									3
+								</a>
+								<a href="#" class="sn-page-item">
+									4
+								</a>
+								<a href="#" class="sn-page-item">
+									5
+								</a>
+								<span class="sn-page-ellipsis">...</span>
+								<a href="#" class="sn-page-item">50</a>
+								<a href="#" class="sn-page-next">
+									<span>下一页</span>
+									<i class="sn-arrow-left"> &gt; </i>
+								</a>
+          <span style="display:none" class="sn-page-next">
+              <span>下一页</span>
+              <i class="sn-arrow-left"> &gt; </i>
+          </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lyfx rblock">
+				<div class="second-title clearfix">
+					<h2>来源入口<span>（着陆页）</span></h2>
+					<div class="setting">
+						<span class="setbtn"><b>全部来源</b><i></i></span>
+						<div class="drop-down">
+							<div class="source-select">
+								<a class="on" href="javascript:void(0)">全部页面</a>
+								<a href="javascript:void(0)">首页</a>
+								<a href="javascript:void(0)">商品详情页</a>
+								<a href="javascript:void(0)">促销页</a>
+								<a href="javascript:void(0)">功能页</a>
+								<a href="javascript:void(0)">频道页</a>
+								<a href="javascript:void(0)">search</a>
+								<a href="javascript:void(0)">list</a>
+								<a href="javascript:void(0)">营销产品</a>
+							</div>
+
+						</div>
+					</div>
+					<a href="javascript:;" class="export"><em></em>导出</a>
+				</div>
+				<div class="data-show">
+					<div class="chart-area">
+						<div class="data-pop">
+							<strong>直接流量</strong>
+							<p>1,251,195个访客</p>
+							<p>占比5.69%</p>
+							<b></b>
+						</div>
+						<div id="chart2">
+
+						</div>
+					</div>
+					<div class="table-area">
+						<b class="arrow-left-tb"><i class="left-arrow1"></i><i class="left-arrow2"></i></b>
+						<div class="fir-table">
+							<dl>
+								<dt>
+									<span class="w50 aleft">排行</span>
+									<span class="w190 aleft">来源名称</span>
+									<span class="w190 acenter">访客数</span>
+									<span class="w145 acenter">跳出率</span>
+									<span class="w60 aright">操作</span>
+								</dt>
+								<dd>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="javascript:void(0)" onclick="sn.showProdFlow(1);">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="javascript:void(0)" onclick="sn.showProdFlow(2);">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+									<ul>
+										<li class="w50 acenter">
+											<p>1</p>
+										</li>
+										<li class="w190 aleft">114114la/daohangtiao</li>
+										<li class="w190">
+											<span class="sp01">99,999,999,999</span>
+											<span class="sp02">
+												<em class="down">999,99%</em>
+											</span>
+										</li>
+										<li class="w145">
+											<span class="sp02">
+												999,99%
+											</span>
+											<span class="sp02">
+												<em class="up">999,99%</em>
+											</span>
+										</li>
+										<li class="w60 aright">
+											<a href="#">查看趋势</a>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+							<div class="sn-page">
+          <span style="display:none" href="#" class="sn-page-prev">
+               <i class="sn-arrow-right"> &lt; </i>
+               <span>上一页</span>
+          </span>
+								<a href="#" class="sn-page-prev">
+									<i class="sn-arrow-right"> &lt; </i>
+									<span>上一页</span>
+								</a>
+								<a href="#" class="sn-page-item">1</a>
+								<a href="#" class="sn-page-item sn-page-current">
+									2
+								</a>
+								<a href="#" class="sn-page-item">
+									3
+								</a>
+								<a href="#" class="sn-page-item">
+									4
+								</a>
+								<a href="#" class="sn-page-item">
+									5
+								</a>
+								<span class="sn-page-ellipsis">...</span>
+								<a href="#" class="sn-page-item">50</a>
+								<a href="#" class="sn-page-next">
+									<span>下一页</span>
+									<i class="sn-arrow-left"> &gt; </i>
+								</a>
+          <span style="display:none" class="sn-page-next">
+              <span>下一页</span>
+              <i class="sn-arrow-left"> &gt; </i>
+          </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+<yy-footer></yy-footer>
+	<div class="newpop prod-flow modal-wrapper modal-960">
+		<div class="header clearfix">
+			<div class="title">
+				趋势分析
+			</div>
+			<div class="close">
+
+			</div>
+		</div>
+		<div class="content">
+			<div class="pblock">
+				<div class="tblock clearfix">
+					<div class="setting fl">
+						<span class="setbtn"><b>访客数</b><i></i></span>
+						<div class="drop-down">
+							<div class="source-select">
+								<a class="on" href="javascript:void(0)">全部页面</a>
+								<a href="javascript:void(0)">首页</a>
+								<a href="javascript:void(0)">商品详情页</a>
+								<a href="javascript:void(0)">促销页</a>
+								<a href="javascript:void(0)">功能页</a>
+								<a href="javascript:void(0)">频道页</a>
+								<a href="javascript:void(0)">search</a>
+								<a href="javascript:void(0)">list</a>
+								<a href="javascript:void(0)">营销产品</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="channel fl" id="channel1">
+						<ul class="ch-list clearfix">
+							<li class="cur">
+								<a href="javascript:void(0);">全部</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">PC</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">WAP</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);">APP</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="trendchart">
+				</div>
+			</div>
+		</div>
+	</div>

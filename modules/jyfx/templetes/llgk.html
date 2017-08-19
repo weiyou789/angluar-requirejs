@@ -1,0 +1,409 @@
+<header class="yy-header w" data-ng-controller="mainmenuCtrl">
+    <span class="logo fl"></span>
+    <main-menu data-data="mainmenu"></main-menu>
+</header>
+<section class="yy-wrap w clearfix">
+    <div class="yy-left fl" data-ng-controller="menufxCtrl">
+        <kz-sidebar-menufx data-ng-show="$parent.openStatus > 0" data-data="menu" data-args="{page:1}"></kz-sidebar-menufx>
+    </div>
+    <div class="yy-right fl">
+        <div class="theme-01 theme topic">
+            <div class="filter clearfix">
+                <span class="title fl">流量概览</span>
+                <div class="vs-date con fl clearfix">
+                    <div class="dateA date fl">
+                        <input class="date-selector Wdate" type="text" value="2016-03-02(&#x4ECA;&#x5929;)">
+                    </div>
+                    <div class="vs fl">VS</div>
+                    <div class="dateB date fl">
+                        <input class="date-selector Wdate" type="text" value="2016-03-02(&#x4ECA;&#x5929;)">
+                    </div>
+                </div>
+                <div class="category mt28 mr10 fl">
+                    <span>全部分类</span><i></i>
+                    <ul>
+                        <li data="ALL" class="active">全部分类</li>
+                        <li data="00001">测试1</li>
+                        <li data="00002">测试2</li>
+                        <li data="00003">测试3</li>
+                    </ul>
+                </div>
+                <div class="channel fl">
+                    <ul class="ch-list clearfix">
+                        <li class="cur">
+                            <a href="javascript:;">全部</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">PC</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">WAP</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">APP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="data">
+                <ul class="data-list">
+                    <li class="clearfix">
+                        <span>浏览量</span>
+                        <span>访客数</span>
+                        <span>新访客数</span>
+                        <span>SPV_UV</span>
+                        <span>人均浏览量</span>
+                        <span>人均停留时长</span>
+                    </li>
+                    <li class="clearfix">
+                        <span>56,789</span>
+                        <span>456,789</span>
+                        <span>56,789</span>
+                        <span>1,156,789</span>
+                        <span>15</span>
+                        <span>26<em class="second">秒</em></span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="percent up">8.61%</span>
+                        <span class="percent down">8.61%</span>
+                        <span class="percent up">8.61%</span>
+                        <span class="percent up">8.61%</span>
+                        <span class="percent down">8.61%</span>
+                        <span class="percent">--</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="theme-02 theme topic">
+            <div class="filter clearfix">
+                <span class="title fl">流量趋势</span>
+            </div>
+            <ul class="radio-list clearfix">
+                <li class="cur">
+                    <a href="javascript:;" data=""><span><em></em></span>访客数</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-type="&#x6D4F;&#x89C8;&#x91CF;"><span><em></em></span>浏览量</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-type="&#x65B0;&#x8BBF;&#x5BA2;&#x6570;"><span><em></em></span>新访客数</a>
+                </li>
+                <li>
+                    <a href="javascript:" data-type="SPV_UV"><span><em></em></span>SPV_UV</a>
+                </li>
+                <li>
+                    <a href="javascript:" data-type="&#x4EBA;&#x5747;&#x6D4F;&#x89C8;&#x91CF;"><span><em></em></span>人均浏览量</a>
+                </li>
+                <li>
+                    <a href="javascript:" data-type="&#x4EBA;&#x5747;&#x505C;&#x7559;&#x65F6;&#x957F;"><span><em></em></span>人均停留时长</a>
+                </li>
+            </ul>
+            <div id="mainChart" class="main-chart"></div>
+        </div>
+        <div class="theme-03 theme topic">
+            <div class="filter clearfix">
+                <span class="title fl">站外引流</span>
+            </div>
+            <table class="table-data">
+                <tr>
+                    <th>一级来源</th>
+                    <th>访客数</th>
+                    <th>有效订单数</th>
+                    <th>有效订单转化率</th>
+                </tr>
+
+                <tr>
+                    <td>搜索</td>
+                    <td>
+                        <span class="mount">999,999,999</span>
+                        <span class="progress"><em style="background:#ff690e;" data-w="100%"></em></span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                    <td>
+                        <span class="mount">999,999,999</span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                    <td>
+                        <span class="per">12.81%</span>
+                        <span class="percent down">12.81%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>搜索</td>
+                    <td>
+                        <span class="mount">999,999,999</span>
+                        <span class="progress"><em style="background:#feb739;" data-w="70%"></em></span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                    <td>
+                        <span class="mount">999,999,999</span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                    <td>
+                        <span class="per">12.81%</span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>搜索</td>
+                    <td>
+                        <span class="mount">999,999,999</span>
+                        <span class="progress"><em style="background:#bdeb75;" data-w="60%"></em></span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                    <td>
+                        <span class="mount">999,999,999</span>
+                        <span class="percent down">12.81%</span>
+                    </td>
+                    <td>
+                        <span class="per">12.81%</span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>搜索</td>
+                    <td>
+                        <span class="mount">999,999,999</span>
+                        <span class="progress"><em style="background:#51def4;" data-w="50%"></em></span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                    <td>
+                        <span class="mount">999,999,999</span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                    <td>
+                        <span class="per">12.81%</span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>搜索</td>
+                    <td>
+                        <span class="mount">999,999,999</span>
+                        <span class="progress"><em style="background:#51def4;" data-w="50%"></em></span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                    <td>
+                        <span class="mount">999,999,999</span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                    <td>
+                        <span class="per">12.81%</span>
+                        <span class="percent up">12.81%</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="theme-04 theme topic">
+            <div class="filter clearfix">
+                <span class="title fl">流量分布</span>
+            </div>
+            <ul class="radio-list clearfix">
+                <li class="cur">
+                    <a href="javascript:;" data-type="&#x8BBF;&#x5BA2;&#x6570;"><span><em></em></span>访客数</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-type="&#x6D4F;&#x89C8;&#x91CF;"><span><em></em></span>浏览量</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-type="&#x65B0;&#x8BBF;&#x5BA2;&#x6570;"><span><em></em></span>新访客数</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-type="SPV_UV"><span><em></em></span>SPV_UV</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-type="&#x4EBA;&#x5747;&#x6D4F;&#x89C8;&#x91CF;"><span><em></em></span>人均浏览量</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-type="&#x4EBA;&#x5747;&#x505C;&#x7559;&#x65F6;&#x957F;"><span><em></em></span>人均停留时长</a>
+                </li>
+            </ul>
+            <div class="chart-wrap clearfix">
+                <div class="brand-cw cw fl">
+                    <div id="FBChart1" class="chart"></div>
+                    <span class="name">品牌流量分布图</span>
+                </div>
+                <div class="pro-cw cw fl">
+                    <div id="FBChart2" class="chart"></div>
+                    <span class="name">商品组流量分布图</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="theme-05 theme topic">
+            <div class="filter clearfix">
+                <span class="title fl">流量转化</span>
+            </div>
+            <ul class="radio-list clearfix">
+                <li class="cur">
+                    <a href="javascript:;" data-type="&#x8BBF;&#x5BA2;&#x6570;"><span><em></em></span>访客数</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-type="&#x8BBF;&#x5BA2;&#x6570;&#x6BD4;&#x4F8B;"><span><em></em></span>访客数比例</a>
+                </li>
+            </ul>
+            <div id="convertCart" class="convert-cart clearfix">
+                <div class="fl tr">
+                    <h4 class="type">本期访客数比例</h4>
+                    <div class="process-bar-1 process-bar"></div>
+                    <div class="process-bar-2 process-bar"></div>
+                    <div class="process-bar-3 process-bar"></div>
+                    <div class="process-bar-4 process-bar"></div>
+                    <div class="help-bar-1 help-bar"><em></em></div>
+                    <div class="help-bar-2 help-bar"><em></em></div>
+                </div>
+                <div class="fr tl">
+                    <h4 class="type">对比期访客数比例</h4>
+                    <div class="process-bar-1 process-bar"></div>
+                    <div class="process-bar-2 process-bar"></div>
+                    <div class="process-bar-3 process-bar"></div>
+                    <div class="process-bar-4 process-bar"></div>
+                    <div class="help-bar-1 help-bar"><em></em></div>
+                    <div class="help-bar-2 help-bar"><em></em></div>
+                </div>
+                <div class="title-view">
+                    <h5 class="name">商品详情页</h5>
+                    <h5 class="name">购物车1</h5>
+                    <h5 class="name">提交订单</h5>
+                    <h5 class="name">支付</h5>
+                </div>
+
+            </div>
+            <div class="mt20 tc">页面访问数转化漏斗图</div>
+        </div>
+        <div class="theme-06 theme topic">
+            <div class="filter clearfix">
+                <span class="title fl">地域分布TOP5</span>
+            </div>
+            <ul class="radio-list clearfix">
+                <li class="cur">
+                    <a href="javascript:;" data-type="&#x8BBF;&#x5BA2;&#x6570;"><span><em></em></span>访客数</a>
+                </li>
+                <li>
+                    <a href="javascript:;" data-type="&#x4E70;&#x5BB6;&#x6570;"><span><em></em></span>买家数</a>
+                </li>
+            </ul>
+            <div class="clearfix p28">
+                <div class="chart-wrap fl">
+                    <div id="areaChart" class="chart"></div>
+                    <span class="name">地域分布TOP5</span>
+                </div>
+                <table id="areaTable" class="table-data fl"></table>
+            </div>
+        </div>
+        <div class="theme-07 theme-04 theme topic">
+            <div class="filter clearfix">
+                <span class="title fl">访问构成</span>
+            </div>
+            <div class="chart-wrap clearfix">
+                <div class="brand-cw cw fl">
+                    <div id="percentChart1" class="chart"></div>
+                    <span class="name">新老访客占比图</span>
+                </div>
+                <div class="pro-cw cw fl">
+                    <div id="percentChart2" class="chart"></div>
+                    <span class="name">访客终端构成占比图</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<yy-footer></yy-footer>
+<!-- list 弹窗 -->
+<div class="modal-wrapper modal-690 core-pop-list-wrapper">
+    <div class="header">
+        <div class="title">
+            LIST 页面
+        </div>
+        <div class="close">
+
+        </div>
+    </div>
+    <div class="content core-pop-list">
+        <div class="device">
+            <ul>
+                <li class="active">全部</li>
+                <li>PC</li>
+                <li>WAP</li>
+                <li>APP</li>
+            </ul>
+        </div>
+        <div class="content-header">
+            <ul>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">去向URL</div>
+                    <div class="visitNum">访客数</div>
+                    <div class="percent">占比</div>
+                </li>
+            </ul>
+        </div>
+        <div class="content-body">
+            <ul>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+

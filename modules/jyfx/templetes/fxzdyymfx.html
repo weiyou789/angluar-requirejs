@@ -1,0 +1,1090 @@
+<header class="yy-header w" data-ng-controller="mainmenuCtrl">
+    <span class="logo fl"></span>
+    <main-menu data-data="mainmenu"></main-menu>
+</header>
+<section class="yy-wrap w clearfix">
+    <div class="yy-left fl" data-ng-controller="menufxCtrl">
+        <kz-sidebar-menufx data-ng-show="$parent.openStatus > 0" data-data="menu" data-args="{page:1}"></kz-sidebar-menufx>
+    </div>
+    <div class="yy-right fl">
+
+        <div class="page-content">
+            <!-- 页头 -->
+
+            <!-- end of 页头 -->
+
+            <!-- 自定义页面分析 wrapper -->
+            <div class="custom-page-wrapper">
+                <div class="header clearfix">
+                    <div class="title fl">
+                        自定义页面分析
+                    </div>
+                    <div class="channel fr" id="channel1">
+                        <ul class="ch-list clearfix">
+                            <li class="cur">
+                                <a href="javascript:void(0);">全部</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">PC</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">WAP</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">APP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tabcss">
+                    <div class="fl">
+                        <a href="javascript:void(0)" class="tab-item on">页面类型</a>
+                        <a href="javascript:void(0)" class="tab-item">页面明细</a>
+                    </div>
+                    <div onclick="sn.showAddType();" class="add-type fr">
+                        + 新建页面类型
+                    </div>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li class="stock-list cur">
+                            <div class="list-wrapper">
+                                <div class="list-header">
+                                    <ul>
+                                        <li>
+                                            <div class="typeId">页面类型ID</div>
+                                            <div class="typeName">页面类型名称</div>
+                                            <div class="typeInitTime">定制时间</div>
+                                            <div class="typeEndTime">失效时间</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">操作</div>
+                                            <div class="delete"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-body">
+                                    <ul>
+                                        <li>
+                                            <div class="typeId">1000000004</div>
+                                            <div class="typeName">电器频道</div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a class="del-btn" href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="typeId">1000000004</div>
+                                            <div class="typeName">电器频道</div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a class="del-btn" href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="disable">
+                                            <div class="typeId">1000000004</div>
+                                            <div class="typeName">电器频道</div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable">失效</div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a class="del-btn" href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="typeId">1000000004</div>
+                                            <div class="typeName">电器频道</div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a class="del-btn" href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="typeId">1000000004</div>
+                                            <div class="typeName">电器频道</div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a class="del-btn" href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="typeId">1000000004</div>
+                                            <div class="typeName">电器频道</div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a class="del-btn" href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="typeId">1000000004</div>
+                                            <div class="typeName">电器频道</div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a class="del-btn" href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="typeId">1000000004</div>
+                                            <div class="typeName">电器频道</div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a class="del-btn" href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--#include virtual="./component/_paginate.html" -->
+                        </li>
+                        <li class="stock-list">
+                            <div class="list-wrapper list-wrapper-page">
+                                <div class="list-header">
+                                    <ul>
+                                        <li>
+                                            <div class="typeId">页面名称</div>
+                                            <div class="typeName">页面链接</div>
+                                            <div class="typeInitTime">定制时间</div>
+                                            <div class="typeEndTime">失效时间</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">操作</div>
+                                            <div class="delete"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-body">
+                                    <ul>
+                                        <li>
+
+                                            <!-- 后端开发人员不要怪我，这个结构视觉后面改了，className对不上意义实际 -->
+
+                                            <div class="typeId">首页</div>
+                                            <div class="typeName">
+                                                <a href="http://www.suning.com">www.suning.com</a>
+                                            </div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-hot">
+                                                    热力图
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="typeId">电器城频道</div>
+                                            <div class="typeName">
+                                                <a href="http://dianqi.suning.com">http://dianqi.suning.com</a>
+                                            </div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-hot">
+                                                    热力图
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="typeId">电器城频道</div>
+                                            <div class="typeName">
+                                                <a href="http://dianqi.suning.com">http://dianqi.suning.com</a>
+                                            </div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-hot">
+                                                    热力图
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="disable">
+                                            <div class="typeId">电器城频道</div>
+                                            <div class="typeName">
+                                                <a href="http://dianqi.suning.com">http://dianqi.suning.com</a>
+                                            </div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable">失效</div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-hot">
+                                                    热力图
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="typeId">电器城频道</div>
+                                            <div class="typeName">
+                                                <a href="http://dianqi.suning.com">http://dianqi.suning.com</a>
+                                            </div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-hot">
+                                                    热力图
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="typeId">电器城频道</div>
+                                            <div class="typeName">
+                                                <a href="http://dianqi.suning.com">http://dianqi.suning.com</a>
+                                            </div>
+                                            <div class="typeInitTime">2015-11-06</div>
+                                            <div class="typeEndTime">2015-11-20</div>
+                                            <div class="isDisable"></div>
+                                            <div class="operation">
+                                                <div class="operation-btn operation-btn-ana">
+                                                    流量分析
+                                                </div>
+                                                <div class="operation-btn operation-btn-hot">
+                                                    热力图
+                                                </div>
+                                                <div class="operation-btn operation-btn-rec">
+                                                    恢复
+                                                </div>
+                                            </div>
+                                            <div class="delete">
+                                                <a href="javascript:void(0);">删除</a>
+                                                <div class="tooltip">
+                                                    <div class="content">
+                                                        确认删除吗?
+                                                    </div>
+                                                    <div class="btn-wrapper">
+                                                        <div class="btn-confirm">
+                                                            确认
+                                                        </div>
+                                                        <div class="btn-cancel">
+                                                            取消
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--#include virtual="./component/_paginate.html" -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end of wrapper -->
+
+            <!-- 两个添加类型的弹窗  -->
+            <div class="custom-addType-wrapper modal-wrapper">
+                <div class="header">
+                    <div class="title">
+                        新增页面类型
+                    </div>
+                    <div class="close"></div>
+                </div>
+                <div class="content">
+                    <div class="tip">
+                            <span>
+                                你已配置<i>45</i>条, 剩余配置<em>5</em>条。
+                            </span>
+                    </div>
+                    <form action="">
+                        <div class="input-wrapper">
+                            <div class="desc">
+                                页面类型ID:
+                            </div>
+                            <input type="text" placeholder="&#x8F93;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#x7C7B;&#x578B;ID&#xFF0C;&#x5982;400000090" required>
+                            <div class="input-choice-wrapper">
+                                <ul>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道电器频道电器频道电器频道电器频道
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="code">400000090</div>
+                                        <div class="name">
+                                            电器频道
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="desc">
+                                页面类型名称:
+                            </div>
+                            <input type="text" disabled placeholder="&#x7CFB;&#x7EDF;&#x751F;&#x6210;" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="desc">
+                                失效时间:
+                            </div>
+                            <input type="text" placeholder="&#x8F93;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#xFF0C;&#x70ED;&#x529B;&#x56FE;&#x5931;&#x6548;&#x65F6;&#x95F4;" class="date-selector Wdate" required>
+                        </div>
+                        <input type="submit" value="&#x786E;&#x5B9A;">
+                    </form>
+                </div>
+            </div>
+
+            <div class="custom-addPage-wrapper modal-wrapper">
+                <div class="header">
+                    <div class="title">
+                        新增页面明细
+                    </div>
+                    <div class="close"></div>
+                </div>
+                <div class="content">
+                    <div class="tip">
+                            <span>
+                                你已配置<i>45</i>条, 剩余配置<em>5</em>条。
+                            </span>
+                    </div>
+                    <form action="">
+                        <div class="input-wrapper">
+                            <div class="desc">
+                                页面链接:
+                            </div>
+                            <input type="text" placeholder="&#x8F93;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#x94FE;&#x63A5;,&#x4F8B;: http://product.suning.com" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="desc">
+                                页面名称:
+                            </div>
+                            <input type="text" placeholder="&#x8F93;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#x540D;&#x79F0;,&#x5982;&#x82F9;&#x679C;6s&#x73AB;&#x7470;&#x91D1;" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="desc">
+                                失效时间:
+                            </div>
+                            <input type="text" class="date-selector Wdate" placeholder="&#x9009;&#x62E9;&#x81EA;&#x5B9A;&#x4E49;&#x9875;&#x9762;&#x9875;&#x9762;&#x5931;&#x6548;&#x65F6;&#x95F4;" required>
+                        </div>
+                        <input type="submit" value="&#x786E;&#x5B9A;">
+                    </form>
+                </div>
+            </div>
+            <!-- 弹窗 end -->
+            <!-- 流量分析图弹窗 -->
+            <div class="prod-flow modal-wrapper modal-960">
+                <div class="header clearfix">
+                    <div class="title">
+                        流量分析
+                    </div>
+                    <div class="close">
+
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="prod-flow-wrapper clearfix">
+                        <div class="title">
+                            商品来源去向
+                        </div>
+                        <div class="content-list from">
+                            <div class="content-header">
+                                <ul>
+                                    <li>
+                                        <div class="from">来源URL</div>
+                                        <div class="visitNum">访客数</div>
+                                        <div class="percentage">占比</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-body">
+                                <ul>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://www.suning.com">
+                                                http://www.suning.com
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            4,853
+                                        </div>
+                                        <div class="percentage">
+                                            25.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://www.suning.com">
+                                                http://www.suning.com
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            4,853
+                                        </div>
+                                        <div class="percentage">
+                                            25.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="prod-info prod-info-simp">
+                            <div class="arrow"></div>
+                            <div class="prod-detail">
+                                <div class="prod-pic">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="prod-desc">
+                                    缤特力 EXPLORER 500 商务蓝牙耳机
+                                </div>
+                                <div class="prod-code">
+                                    1006887703
+                                </div>
+                            </div>
+
+                            <div class="prod-detail-simp">
+                                <p>商品详情页</p>
+                                <span>访客数</span><i>18,173</i>
+                            </div>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="content-list to">
+                            <div class="content-header">
+                                <ul>
+                                    <li>
+                                        <div class="from">来源</div>
+                                        <div class="visitNum">访客数</div>
+                                        <div class="percentage">占比</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-body">
+                                <ul>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://www.suning.com">
+                                                http://www.suning.com
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            4,853
+                                        </div>
+                                        <div class="percentage">
+                                            25.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://www.suning.com">
+                                                http://www.suning.com
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            4,853
+                                        </div>
+                                        <div class="percentage">
+                                            25.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="from">
+                                            <a href="http://cart.suning.com/email">
+                                                http://cart.suning.com/email
+                                            </a>
+                                        </div>
+                                        <div class="visitNum">
+                                            52,853
+                                        </div>
+                                        <div class="percentage">
+                                            45.12%
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of 流量分析图弹窗 -->
+        </div>
+    </div>
+</section>
+<yy-footer></yy-footer>
+<!-- list 弹窗 -->
+<div class="modal-wrapper modal-690 core-pop-list-wrapper">
+    <div class="header">
+        <div class="title">
+            LIST 页面
+        </div>
+        <div class="close">
+
+        </div>
+    </div>
+    <div class="content core-pop-list">
+        <div class="device">
+            <ul>
+                <li class="active">全部</li>
+                <li>PC</li>
+                <li>WAP</li>
+                <li>APP</li>
+            </ul>
+        </div>
+        <div class="content-header">
+            <ul>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">去向URL</div>
+                    <div class="visitNum">访客数</div>
+                    <div class="percent">占比</div>
+                </li>
+            </ul>
+        </div>
+        <div class="content-body">
+            <ul>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+                <li>
+                    <div class="order"></div>
+                    <div class="to">
+                        <a href="http://www.suning.com">http://www.suning.com</a>
+                    </div>
+                    <div class="visitNum">
+                        4,342
+                    </div>
+                    <div class="percent">
+                        25.12%
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+

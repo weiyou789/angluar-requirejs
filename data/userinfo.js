@@ -1,0 +1,28 @@
+/*
+{"testdata":
+    [
+        {
+            "navName":"首页",
+            "url":"core.html#!/index",
+            "group":"index"
+        },
+        {
+            "navName":"实时报告",
+            "url":"core.html#!/ssbg",
+            "group":"ssbg"
+        },
+        {
+            "navName":"实时概况",
+            "url":"core.html#!/hxymfx",
+            "group":"ssgk"
+        },
+        {
+            "navName":"经营分析",
+            "url":""
+        },
+        {
+            "navName":"专题分析",
+            "url":""
+        }
+    ]
+}*/
